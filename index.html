@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Assignment</title>
+</head>
+<body>
+    <h1>My Favorite Activities</h1>
+
+    <ol type="I">
+    <li>Reading</li>
+    <li>Hiking</li>
+    <li>Coding</li>
+    <li>Cooking</li>
+    <li>Traveling</li>
+    </ol>
+
+    <h2>A Beautiful Landscape</h2>
+
+    <img src="https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Landscape" width="600">
+
+    <h2>Contact Information</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+            <td>Paul Kiio</td>
+            <td>130 Masii, Machakos</td>
+            <td>0702777264</td>
+            <td>paulkiio57@gmail.com</td>
+            </tr>
+            <tr>
+            <td>Jessy Bor</td>
+            <td>234 Nunguni, Makueni</td>
+            <td>0112675980</td>
+            <td>jessybor@gmail.com</td>
+            </tr>
+            <tr>
+            <td>Anne Mwende</td>
+            <td>789 Pineline, Embakasi</td>
+            <td>555-111-2222</td>
+            <td>anniemwesh@gmail.com</td>
+            </tr>
+            <tr>
+            <td>Keith Ouma</td>
+            <td>344 Kondele, Kisumu</td>
+            <td>0766564783</td>
+            <td>keyouma444@gmail.com</td>
+            </tr>
+            <tr>
+            <td>Mark Kamau</td>
+            <td>224 Westlands, Nairobi</td>
+            <td>0202456786</td>
+            <td>mark.kamau@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Registration Form</h1>
+
+    <form action="" method="">
+
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required minlength="2" maxlength="50">
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <!-- Using type="email" for email validation -->
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Password" required minlength="8">
+            <!--  Minimum length of 8 characters for security reasons -->
+        </div>
+
+        <div>
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+        </div>
+
+
+        <!-- Dropdown (Select) -->
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="">Select a Country</option>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="germany">Germany</option>
+                <option value="france">France</option>
+                <!-- Add more countries as needed -->
+            </select>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div class="form-group">
+            <label>Gender:</label>
+            <label for="male">
+                <input type="radio" id="male" name="gender" value="male" required> Male
+            </label>
+            <label for="female">
+                <input type="radio" id="female" name="gender" value="female"> Female
+            </label>
+            <label for="other">
+                <input type="radio" id="other" name="gender" value="other"> Other
+            </label>
+            <!-- 'required' attribute on only the first radio button ensures one must be selected.  All radios in the group share the same 'name' attribute. -->
+        </div>
+
+        <!-- Checkboxes -->
+        <div class="form-group">
+            <label>Interests:</label>
+            <label for="coding">
+                <input type="checkbox" id="coding" name="interests" value="coding"> Coding
+            </label>
+            <label for="reading">
+                <input type="checkbox" id="reading" name="interests" value="reading"> Reading
+            </label>
+            <label for="music">
+                <input type="checkbox" id="music" name="interests" value="music"> Music
+            </label>
+            <!-- Checkboxes allow multiple selections.  All checkboxes in this group share the 'name' attribute but values are specified for each one. -->
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+            <button type="submit">Register</button>
+        </div>
+
+    </form>
+</body>
+</html>
